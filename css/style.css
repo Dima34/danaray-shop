@@ -19,6 +19,9 @@ p, h1, h2, a {
 .bold {
   font-weight: 500; }
 
+.no-scroll {
+  overflow: hidden; }
+
 h1, .h1 {
   font-size: 65px;
   line-height: 67px;
@@ -98,7 +101,9 @@ header .wrapper {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: .3s; }
+  transition: .3s;
+  overflow: auto;
+  height: 100%; }
   .header__nav-container.active {
     opacity: 1;
     visibility: visible;
@@ -110,13 +115,14 @@ header .wrapper {
   max-width: 494px;
   margin-right: 42px;
   position: relative;
-  height: 100%;
+  min-height: 100%;
+  height: fit-content;
   min-height: calc(100vh - 96px);
   padding: 68px 82px 78px 136px; }
   .header__nav::after {
     content: "";
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 42px;
     background: url("../img/menu-waves.svg");
     background-repeat: repeat-y;
