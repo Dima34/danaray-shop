@@ -75,7 +75,8 @@ body {
 header {
   background: var(--white);
   position: relative;
-  padding: 20px 0; }
+  padding: 20px 0;
+  z-index: 5; }
 
 header .wrapper {
   display: flex;
@@ -133,7 +134,7 @@ header .wrapper {
 .header__nav-item {
   margin-bottom: 48px; }
   .header__nav-item a {
-    color: var(--milk);
+    color: var(--white);
     font-size: 45px; }
 
 .header__nav-contacts {
@@ -206,6 +207,14 @@ footer {
 .footer_subscribe {
   padding-top: 10px; }
 
+input, textarea {
+  font-size: 22px;
+  line-height: 30px;
+  resize: none;
+  background: transparent; }
+  input::placeholder, textarea::placeholder {
+    opacity: .8; }
+
 .subscribe-input {
   position: relative; }
   .subscribe-input input {
@@ -213,13 +222,10 @@ footer {
     background: transparent;
     border-radius: 28px;
     border: 2px solid var(--white);
-    font-size: 22px;
-    line-height: 30px;
     color: var(--white);
     width: 100%; }
     .subscribe-input input::placeholder {
-      color: var(--white);
-      opacity: 1; }
+      color: var(--white); }
 
 .subscribe-btn {
   position: absolute;
@@ -463,6 +469,84 @@ footer {
   justify-content: space-between;
   margin-bottom: 3px; }
 
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 165px; }
+  .contacts .wrapper {
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between; }
+
+.contacts__form {
+  flex-shrink: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 465px;
+  width: 100%; }
+  .contacts__form h2 {
+    color: var(--lightBrown);
+    margin-bottom: 30px; }
+  .contacts__form fieldset {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%; }
+  .contacts__form input, .contacts__form textarea {
+    margin-bottom: 14px;
+    border-radius: 20px;
+    border: 1px solid var(--brown);
+    color: var(--brown);
+    padding: 14px 22px;
+    width: 100%; }
+    .contacts__form input::placeholder, .contacts__form textarea::placeholder {
+      color: var(--brown); }
+  .contacts__form button {
+    min-width: 210px;
+    padding: 6px 20px;
+    background: var(--coral);
+    color: var(--white);
+    width: fit-content;
+    font-size: 37px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    border-radius: 20px;
+    margin: 0 auto; }
+
+.contacts_image {
+  position: relative;
+  max-width: 610px;
+  width: 100%;
+  aspect-ratio: 610/477;
+  height: fit-content;
+  margin-top: 100px; }
+  .contacts_image a {
+    position: absolute;
+    width: 10.49%;
+    align-self: 1/1; }
+    .contacts_image a img {
+      width: 100%;
+      height: 100%; }
+    .contacts_image a:nth-child(3) {
+      left: 18.20%; }
+    .contacts_image a:nth-child(2) {
+      top: 40.31%; }
+  .contacts_image > img {
+    width: 91.31%;
+    aspect-ratio: 557/430;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+.contacts {
+  padding-bottom: 80px; }
+
+.contacts_image {
+  margin-top: 80px; }
+
 @media (max-width: 1024px) {
   footer .wrapper {
     flex-direction: column;
@@ -509,7 +593,11 @@ footer {
     .goto_text .arrow-btn {
       width: 65px;
       height: 65px;
-      margin: 10px; } }
+      margin: 10px; }
+  .contacts__form {
+    flex-shrink: 1; }
+  .contacts_image {
+    flex-shrink: 3; } }
 
 @media (max-width: 600px) {
   h1, .h1 {
@@ -538,16 +626,32 @@ footer {
     justify-content: center; }
     .header__nav::after {
       display: none; }
+  .header__nav-opener {
+    width: 48px;
+    height: 48px; }
+    .header__nav-opener img {
+      width: 100%;
+      height: 100%; }
+  .cart-number {
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+    line-height: 1.2; }
   .header__nav-item {
     text-align: center; }
   .header__nav-contacts {
     margin: 0; }
+  .header__nav-container, .header__nav {
+    min-height: calc(100vh - 68px); }
   .footer_nav {
     flex-direction: column;
     text-align: center;
     gap: 22px; }
     .footer_nav ul:last-child {
       text-align: center; }
+  .subscribe-btn {
+    width: 48px;
+    height: 48px; }
   .categories-list {
     grid-template-columns: 1fr;
     gap: 10 0px; }
@@ -587,6 +691,13 @@ footer {
     margin-bottom: 25px;
     text-align: center; }
   .products h1 {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .contacts .wrapper {
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; }
+  input, textarea {
+    font-size: 18px;
+    line-height: 22px; } }
 
 /*# sourceMappingURL=style.css.map */

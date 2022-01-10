@@ -1,0 +1,46 @@
+<!-- Made by Djigit_ telegram: @Djigit34 -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    @@include('./header.html')
+
+    <section class="contacts">
+        <div class="wrapper">
+            <form action="" class="contacts__form">
+                <h2>
+                    Have questions? <br>
+                    Feel free to reach out!
+                </h2>
+                <fieldset>
+                    <input placeholder="Name" type="text" name="userName" id="userEmail">
+                    <input placeholder="Email" type="email" name="userEmail" id="userEmail">
+                    <input placeholder="Order Number (Optional)" type="tel" name="userName" id="userName">
+                    <textarea placeholder="Message" name="userMessage" id="userMessage" rows="3"></textarea>
+                    <button type="submit">Submit</button>
+                </fieldset>
+                
+            </form>
+            <div class="contacts_image">
+                <img src="./img/contacts-woomen.svg" alt="">
+                <a href="#"><img src="./img/contacts-inst.svg" alt="To Instagram"></a>
+                <a href="#"><img src="./img/contacts-mail.svg" alt="To Mail"></a>
+            </div>
+        </div>
+    </section>
+
+    @@include('./footer.html')
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
