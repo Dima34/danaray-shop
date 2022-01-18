@@ -47,6 +47,9 @@ p, .p {
   font-size: 19px;
   line-height: 22px; }
 
+body {
+  overflow-x: hidden; }
+
 :root {
   --brown: #6E4D3C;
   --lightBrown: #B08060;
@@ -58,7 +61,8 @@ p, .p {
   --purple: #B08EB2;
   --red: #CB5834;
   --milk: #F7EEE4;
-  --white: #FCF6F2; }
+  --white: #FCF6F2;
+  --cormonant: Cormorant; }
 
 p, a, h1, h2 {
   color: var(--brown); }
@@ -547,6 +551,53 @@ input, textarea {
 .contacts_image {
   margin-top: 80px; }
 
+.instagram {
+  padding-top: 134px;
+  margin-bottom: 150px;
+  overflow: hidden; }
+  .instagram h2 {
+    font-size: 120px;
+    line-height: 145px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: var(--purple);
+    margin-bottom: -75px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2; }
+  .instagram .swiper-slide {
+    width: 591px !important;
+    height: 570px !important;
+    padding: 0 32px; }
+    .instagram .swiper-slide img {
+      width: 314px;
+      height: 300px;
+      object-fit: cover;
+      transition: .3s; }
+  .instagram .swiper-slide-prev {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .instagram .swiper-slide-next {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .instagram .swiper-wrapper {
+    align-items: center !important; }
+  .instagram .swiper-slide-active img {
+    width: 100%;
+    height: 100%; }
+
+.instagram-subscription {
+  text-align: center;
+  color: var(--brown);
+  opacity: .4;
+  font-family: var(--cormonant);
+  margin-top: 54px; }
+  .instagram-subscription a {
+    color: var(--purple);
+    text-decoration: underline; }
+
 @media (max-width: 1024px) {
   footer .wrapper {
     flex-direction: column;
@@ -597,7 +648,15 @@ input, textarea {
   .contacts__form {
     flex-shrink: 1; }
   .contacts_image {
-    flex-shrink: 3; } }
+    flex-shrink: 3; }
+  .instagram h2 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin-bottom: -37px; }
+  .instagram .swiper-slide {
+    width: 370px !important;
+    height: 400px !important;
+    padding: 0 32px; } }
 
 @media (max-width: 600px) {
   h1, .h1 {
@@ -698,6 +757,19 @@ input, textarea {
     max-width: 400px; }
   input, textarea {
     font-size: 18px;
-    line-height: 22px; } }
+    line-height: 22px; }
+  .instagram {
+    padding: 50px 0; }
+    .instagram h2 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 10px; }
+  .instagram .swiper-slide {
+    width: 370px !important;
+    height: 400px !important;
+    padding: 0 32px; }
+  .instagram-subscription {
+    margin-top: 35px;
+    font-size: 22px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -66,6 +66,10 @@ p,.p{
     line-height: 22px;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 :root{
     --brown: #6E4D3C;
     --lightBrown: #B08060;
@@ -78,6 +82,7 @@ p,.p{
     --red: #CB5834;
     --milk: #F7EEE4;
     --white: #FCF6F2;
+    --cormonant: Cormorant;
 }
 
 p,a,h1,h2{
@@ -733,6 +738,77 @@ input, textarea{
     margin-top: 80px;
 }
 
+.instagram{
+    padding-top: 134px;
+    margin-bottom: 150px;
+    overflow: hidden;
+
+    h2{
+        font-size: 120px;
+        line-height: 145px;
+        text-align: center;
+        letter-spacing: 0.07em;
+        color: var(--purple);
+        margin-bottom: -75px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+    }
+
+    .swiper-slide{
+        width: 591px !important;
+        height: 570px !important;
+        // width: 314px !important;
+        // height: 300px !important;
+        padding: 0 32px;
+
+        img{
+            width: 314px;
+            height: 300px;
+            object-fit: cover;
+            transition: .3s;
+        }
+    }
+
+    .swiper-slide-prev{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;        
+    }
+
+    .swiper-slide-next{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .swiper-wrapper{
+        align-items: center !important;
+    }
+
+    .swiper-slide-active{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+}
+
+.instagram-subscription{
+    text-align: center;
+    color: var(--brown);
+    opacity: .4;
+    font-family: var(--cormonant);
+    margin-top: 54px;
+
+
+    a{
+        color: var(--purple);
+        text-decoration: underline;
+    }
+}
+
 @media (max-width: 1024px) {
     footer{
 
@@ -825,6 +901,21 @@ input, textarea{
 
     .contacts_image{
         flex-shrink: 3;
+    }
+
+    .instagram{
+    
+        h2{
+            font-size: 60px;
+            line-height: 1.2;
+            margin-bottom: -37px;
+        }
+    }
+
+    .instagram .swiper-slide {
+        width: 370px !important;
+        height: 400px !important;
+        padding: 0 32px;
     }
 }
 
@@ -1004,7 +1095,26 @@ input, textarea{
         line-height: 22px;
     }
 
+    .instagram{
+        padding: 50px 0;
+    
+        h2{
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+    }
 
+    .instagram .swiper-slide {
+        width: 370px !important;
+        height: 400px !important;
+        padding: 0 32px;
+    }
+
+    .instagram-subscription{
+        margin-top: 35px;
+        font-size: 22px;
+    }
 
     // тюльпани, меленькi чайнi рози, роза-пiон, маки,
     // багато рiзних квiтiв

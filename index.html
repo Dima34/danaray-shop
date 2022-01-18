@@ -10,6 +10,7 @@
     <link rel="icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -54,7 +55,7 @@
         </ul>
     </nav>
 </header>
-
+    
     <section class="hero">
         <div class="wrapper">
             <h1 class="text-center">Nourish and flourish with our
@@ -169,6 +170,51 @@
         </div>
     </section>
 
+    <section class="instagram">
+        <div class="wrapper">
+            <h2>Instagram</h2>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="../img/image-placeholder.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/image-placeholder.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/image-placeholder.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/image-placeholder.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/image-placeholder.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/image-placeholder.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/image-placeholder.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/image-placeholder.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/image-placeholder.png" alt="">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="instagram-subscription text-big">
+                Follow our <a href="#">Instagram</a> & stay connected! <br>
+@denarayessentials
+            </div>
+        </div>
+    </section>
+
     <footer>
     <div class="wrapper">
         <div class="footer_logo-block">
@@ -207,7 +253,14 @@
     </div>
 </footer>
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" integrity="sha512-pY1t/ADgTwbfGbw0+mRGd33EroA5YgRUWhQNFpPIAdBzyoSb38FsFrf4wBTcS3GFPdTfgtpRrbGCkdl2C2OXYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: "auto",
+            centeredSlides: true
+        });
+    </script>
     <script src="./js/script.js"></script>
 </body>
-
 </html>
