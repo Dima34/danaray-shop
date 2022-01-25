@@ -13,9 +13,8 @@ gulp.task("sass-compile", function(){
     .pipe(gulp.dest("./css/"))
     
 })
-
 gulp.task('fileinclude', function() {
-    return gulp.src(['./src/index.html','./src/products.html', './src/contacts.html'])
+    return gulp.src(['./src/product.html','./src/policy.html','./src/about-us.html','./src/ingredients.html','./src/index.html','./src/products.html', './src/contacts.html'])
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'

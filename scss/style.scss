@@ -51,7 +51,7 @@ h2, .h2{
     line-height: 48px;
 }
 
-p,.p{
+p,.p, li{
     font-size: 28px;
     line-height: 34px;
 }
@@ -161,7 +161,7 @@ header .wrapper{
         position: absolute;
         height: 100%;
         width: 42px;
-        background: url("../img/menu-waves.svg");
+        background: url("../img/waves-small.svg");
         background-repeat: repeat-y;
         background-size: 100% auto;
         top: 0%;
@@ -756,43 +756,17 @@ input, textarea{
     }
 
     .swiper-slide{
-        width: 591px !important;
-        height: 570px !important;
-        // width: 314px !important;
-        // height: 300px !important;
-        padding: 0 32px;
+        width: 427px;
+        height: 570px;
 
-        img{
-            width: 314px;
-            height: 300px;
-            object-fit: cover;
-            transition: .3s;
-        }
-    }
-
-    .swiper-slide-prev{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;        
-    }
-
-    .swiper-slide-next{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .swiper-wrapper{
-        align-items: center !important;
-    }
-
-    .swiper-slide-active{
         img{
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
-        
     }
+
+    
 }
 
 .instagram-subscription{
@@ -806,6 +780,184 @@ input, textarea{
     a{
         color: var(--purple);
         text-decoration: underline;
+    }
+}
+
+.ingredients-header{
+    background: var(--milk);
+    padding: 70px 0;
+
+    h2{
+        text-align: center;
+        color: var(--green);
+        margin-bottom: 52px;
+    }
+
+    button{
+        font-family: 'Cormorant';
+        color: var(--lightBrown);
+
+        &:hover{
+            color: var(--brown);
+        }
+    }
+}
+
+.ingredients-selection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 38px;
+}
+
+.inredients-container{
+    padding: 85px 0 150px 0;
+    margin-bottom: 120px;
+
+    h2{
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--green);
+        color: var(--lightBrown);
+        margin-bottom: 35px;
+        border-radius: 50%;
+        padding-left: 2px;
+        padding-bottom: 2px;
+    }
+}
+
+.ingredients-block_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-bottom: 120px;
+}
+
+.ingredient-item{
+    max-width: 440px;
+    width: 100%;
+
+    h3{
+        color: var(--green);
+        margin-bottom: 16px;
+    }
+
+    li{
+        color: var(--brown);
+    }
+}
+
+.about-us{
+    padding-top: 57px;
+
+    h1{
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    h1,h2{
+        color: var(--green);
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    p{
+        color: var(--brown);
+    }
+
+    article{
+        margin-bottom: 70px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about-us_imaged{
+    display: grid;
+    grid-template-columns: 1fr 378px;
+    gap: 30px;
+
+    img{
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--green);
+    }
+}
+
+.imaged-text{
+    max-width: 700px;
+    padding-top: 47px;
+    padding-bottom: 100px;
+
+    .subscription{
+        position: relative;
+        margin-top: 40px;
+        padding-left: 26px;
+        color: var(--green);
+    }
+
+    .subscription::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 16px;
+        width: 18px;
+        height: 1px;
+        background: var(--green);
+    }
+}
+
+.about-us_footer{
+    position: relative;
+    margin-top: -1px;
+
+    hr{
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: var(--green);
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+    
+    .wrapper{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding: 32px 0;
+
+        h2{
+            color: var(--green);
+        }
+        
+
+        &::after{
+            content: url("../img/about-us_footer.svg");
+            position: absolute;
+            top: -123px;
+            left: 188px;
+        }
+    }
+}
+
+.policy{
+    padding: 65px 0 120px 0;
+    h1{
+        margin-bottom: 35px;
+        color: var(--green);
+    }
+
+    p{
+        color: var(--brown);
     }
 }
 
@@ -910,12 +1062,25 @@ input, textarea{
             line-height: 1.2;
             margin-bottom: -37px;
         }
+
+        .swiper-slide{
+            width: 320px;
+            height: 450px;
+        }
     }
 
-    .instagram .swiper-slide {
-        width: 370px !important;
-        height: 400px !important;
-        padding: 0 32px;
+    .about-us_imaged{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        grid-auto-flow: dense;
+    
+        img{
+            max-width: 370px;
+            margin: 0 auto;
+            height: auto;
+            border: 1px solid var(--green);
+        }
     }
 }
 
@@ -1103,18 +1268,27 @@ input, textarea{
             line-height: 1.2;
             margin-bottom: 10px;
         }
-    }
 
-    .instagram .swiper-slide {
-        width: 370px !important;
-        height: 400px !important;
-        padding: 0 32px;
+        .swiper{
+            overflow: visible;
+        }
+
+        .swiper-slide{
+            width: 250px;
+            height: 350px;
+        }
     }
 
     .instagram-subscription{
         margin-top: 35px;
         font-size: 22px;
     }
+
+    .ingredients-block_container{
+        gap: 60px;
+    }
+
+        
 
     // тюльпани, меленькi чайнi рози, роза-пiон, маки,
     // багато рiзних квiтiв
