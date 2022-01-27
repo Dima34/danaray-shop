@@ -31,28 +31,34 @@
         </a>
     </div>
     <nav class="header__nav-container">
-        <ul class="header__nav">
-            <li class="header__nav-item">
-                <a href="./index.html">Home</a>
-            </li>
-            <li class="header__nav-item">
-                <a href="./about-us.html">About us</a>
-            </li>
-            <li class="header__nav-item">
-                <a href="./products.html">Shop</a>
-            </li>
-            <li class="header__nav-item">
-                <a href="./contacts.html">Contact</a>
-            </li>
-            <li class="header__nav-item">
-                <a href="./ingredients.html">Ingredient Dictionary</a>
-            </li>
-            <li class="header__nav-item header__nav-contacts">
+        <div class="header__nav">
+            <ul class="">
+                <li class="header__nav-item">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./about-us.html">About us</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./products.html">Shop</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./contacts.html">Contact</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./ingredients.html">Ingredient Dictionary</a>
+                </li>
+                <li class="header__nav-item ">
+                    
+                </li>
+            </ul>
+            <div class="header__nav-contacts">
                 <a href="#">
                     <img src="./img/header__instagram.svg" alt="link to our instagram">
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
+        
     </nav>
 </header>
     
@@ -257,8 +263,28 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" integrity="sha512-pY1t/ADgTwbfGbw0+mRGd33EroA5YgRUWhQNFpPIAdBzyoSb38FsFrf4wBTcS3GFPdTfgtpRrbGCkdl2C2OXYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         const swiper = new Swiper('.swiper', {
+            effect: 'creative',
+            centeredSlides: true,
             slidesPerView: "auto",
-            centeredSlides: true
+            initialSlide : 2,
+            grabCursor: true,
+            loop: true,
+            speed: 400,
+            autoplay: {
+                delay: 3500,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+            },
+            creativeEffect: {
+                prev: {
+                    translate: [-400, 0, 0],
+                    scale: 0.7,
+                },
+                next: {
+                    translate: [400, 0, 0],
+                    scale: 0.7,                
+                },
+            },
         });
     </script>
     <script src="./js/script.js"></script>

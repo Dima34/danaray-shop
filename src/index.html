@@ -181,8 +181,28 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" integrity="sha512-pY1t/ADgTwbfGbw0+mRGd33EroA5YgRUWhQNFpPIAdBzyoSb38FsFrf4wBTcS3GFPdTfgtpRrbGCkdl2C2OXYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         const swiper = new Swiper('.swiper', {
+            effect: 'creative',
+            centeredSlides: true,
             slidesPerView: "auto",
-            centeredSlides: true
+            initialSlide : 2,
+            grabCursor: true,
+            loop: true,
+            speed: 400,
+            autoplay: {
+                delay: 3500,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+            },
+            creativeEffect: {
+                prev: {
+                    translate: [-400, 0, 0],
+                    scale: 0.7,
+                },
+                next: {
+                    translate: [400, 0, 0],
+                    scale: 0.7,                
+                },
+            },
         });
     </script>
     <script src="./js/script.js"></script>

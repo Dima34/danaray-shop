@@ -796,6 +796,8 @@ input, textarea {
     height: auto; }
   .header__nav-opener p, .header__cart p {
     display: none; }
+  .header__nav-contacts {
+    text-align: center; }
   .header__nav {
     margin: 0;
     max-width: unset;
