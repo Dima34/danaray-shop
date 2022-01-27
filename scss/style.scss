@@ -431,9 +431,6 @@ input, textarea{
 
 .categories_item{
 
-    img{
-        transition: .3s transform, .3s box-shadow;
-    }
     h2{
         transition: .3s color;
     }
@@ -443,9 +440,7 @@ input, textarea{
             color: var(--green);
         }
 
-        &>img{
-            box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
-        }
+       
 
         .arrow-btn{
             transform: scale(1.05);
@@ -621,6 +616,7 @@ input, textarea{
         &:first-child{
             position: absolute;
             aspect-ratio: 220/245;
+            max-width: 220px;
             object-fit: cover;
             top: -84px;
             left: 155px;
@@ -629,6 +625,7 @@ input, textarea{
         &:nth-child(2){
             position: absolute;
             aspect-ratio: 225/270;
+            max-width: 225px;
             object-fit: cover;
             bottom: -82px;
             left: 0px;
@@ -638,6 +635,7 @@ input, textarea{
             display: block;
             margin-left: auto;
             aspect-ratio: 380/500;
+            object-fit: cover;
         }
     }
 }
