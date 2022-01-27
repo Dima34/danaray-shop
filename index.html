@@ -277,14 +277,41 @@
             },
             creativeEffect: {
                 prev: {
-                    translate: [-400, 0, 0],
-                    scale: 0.7,
+                    translate: [-30, 0, 0],
+                    scale: 0.9,
                 },
                 next: {
-                    translate: [400, 0, 0],
-                    scale: 0.7,                
+                    translate: [30, 0, 0],
+                    scale: 0.9,                
                 },
             },
+
+            breakpoints: {
+                600: {
+                    creativeEffect: {
+                        prev: {
+                            translate: [-300, 0, 0],
+                            scale: 0.7,
+                        },
+                        next: {
+                            translate: [300, 0, 0],
+                            scale: 0.7,                
+                        },
+                    },
+                },
+                1024: {
+                    creativeEffect: {
+                        prev: {
+                            translate: [-400, 0, 0],
+                            scale: 0.7,
+                        },
+                        next: {
+                            translate: [400, 0, 0],
+                            scale: 0.7,                
+                        },
+                    },
+                },
+            }
         });
     </script>
     <script src="./js/script.js"></script>
