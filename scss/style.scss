@@ -93,6 +93,10 @@ body{
     background: var(--white);
 }
 
+.d-flex{
+    display: flex;
+}
+
 .text-center{
     text-align: center;
 }
@@ -241,6 +245,11 @@ footer{
 
     .navigation{
         color: var(--white);
+        transition: .3s color;
+
+        &:hover{
+            color: var(--brown);
+        }
     }
 }
 
@@ -311,6 +320,17 @@ input, textarea{
     top: 0;
 }
 
+.footer_inst, .arrow-btn, .header__close-image, .header__open-image{
+    transition: .35s transform, .35s box-shadow;
+    border-radius: 50%;
+
+    &:hover{
+        transform: scale(1.05);
+        opacity: 1;
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+    }
+}
+
 .arrow-btn{
     width: 56px;
     height: 56px;
@@ -320,6 +340,7 @@ input, textarea{
     border-radius: 50%;
     background: var(--white);
     flex-shrink: 0;
+    
 }
 
 .subscribe-title{
@@ -404,13 +425,21 @@ input, textarea{
     aspect-ratio: 370\420;
 }
 
-.categories-list_item_carf-header{
+.categories-list_item_card-header{
     display: flex;
     flex-wrap: nowrap;
     gap: 15px;
     align-items: center;
     padding: 20px 0;
     border-bottom: 1px solid var(--purple);
+
+    h2{
+        transition: .3s color;
+
+        &:hover{
+            color: var(--green);
+        }
+    }
 
     .arrow-btn{
         margin-left: auto;
@@ -452,24 +481,40 @@ input, textarea{
     flex-wrap: wrap;
 }
 
-.essential-card{
+.essentials-card-wrapper{
     max-width: 250px;
     flex-basis: 150px;
     flex-grow: 1;
+}
+
+.essential-card{
 
     img{
         width: 100%;
         aspect-ratio: 250/300;
         object-fit: cover;
         margin-bottom: 12px;
+        transition: .3s transform, .3s box-shadow;
     }
 
     h3{
         margin-bottom: 8px;
+        transition: .3s color;
     }
 
     data{
         font-family: sans-serif;
+    }
+
+    &:hover{
+        h3{
+            color: var(--green);
+        }
+
+        img{
+            transform: translateY(-8px);
+            box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+        }
     }
 }
 
@@ -780,6 +825,11 @@ input, textarea{
     a{
         color: var(--purple);
         text-decoration: underline;
+        transition: .3s color;
+
+        &:hover{
+            color: var(--green);
+        }
     }
 }
 
@@ -928,6 +978,10 @@ input, textarea{
         top: 0;
         margin: 0;
     }
+
+    h2{
+        color: var(--green);
+    }
     
     .wrapper{
         position: relative;
@@ -935,9 +989,7 @@ input, textarea{
         text-align: center;
         padding: 32px 0;
 
-        h2{
-            color: var(--green);
-        }
+        
         
 
         &::after{

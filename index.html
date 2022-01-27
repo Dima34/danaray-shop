@@ -61,7 +61,7 @@
         
     </nav>
 </header>
-    
+
     <section class="hero">
         <div class="wrapper">
             <h1 class="text-center">Nourish and flourish with our
@@ -79,24 +79,25 @@
 
             <ul class="categories-list">
                 <li class="categories-list_item">
-                    <a href="#">
+                    <a href="#" class="">
                         <img src="./img/image-placeholder.png" alt="" class="categories-list_item-image">
-                        <div class="categories-list_item_carf-header">
+                        <div class="categories-list_item_card-header">
                             <h2 class="text-big">Shop Body Care</h2>
-                            <a href="#" class="arrow-btn">
+                            <div class="arrow-btn">
                                 <img src="./img/arrow-white.svg" alt="">
-                            </a>
-                        </div>
-                    </a>
+                            </div>
+                        </div>  
+                    </a>                                     
                 </li>
                 <li class="categories-list_item">
-                    <a href="#">
+                    <a href="#" class="">
                         <img src="./img/image-placeholder.png" alt="" class="categories-list_item-image">
-                        <div class="categories-list_item_carf-header">
+                    
+                        <div class="categories-list_item_card-header">
                             <h2 class="text-big">Shop Facial Care</h2>
-                            <a href="#" class="arrow-btn">
+                            <div class="arrow-btn">
                                 <img src="./img/arrow-white.svg" alt="">
-                            </a>
+                            </div>
                         </div>
                     </a>
                 </li>
@@ -108,31 +109,36 @@
         <div class="wrapper">
             <h2 class="big text-center">Skin Essentials</h2>
 
-            <div class="essentials-cards-container">
-                <a href="#" class="essential-card">
-                    <img src="./img/image-placeholder.png" alt="">
-                    <h3 class="p">Bliss Butter</h3>
-                    <data class="text-small" value="$100">$100</data>
-                </a>
-
-                <a href="#" class="essential-card">
-                    <img src="./img/image-placeholder.png" alt="">
-                    <h3 class="p">Bliss Butter</h3>
-                    <data class="text-small" value="$100">$100</data>
-                </a>
-
-                <a href="#" class="essential-card">
-                    <img src="./img/image-placeholder.png" alt="">
-                    <h3 class="p">Bliss Butter</h3>
-                    <data class="text-small" value="$100">$100</data>
-                </a>
-
-                <a href="#" class="essential-card">
-                    <img src="./img/image-placeholder.png" alt="">
-                    <h3 class="p">Bliss Butter</h3>
-                    <data class="text-small" value="$100">$100</data>
-                </a>
-            </div>
+            <ul class="essentials-cards-container">
+                <li class="essentials-card-wrapper">
+                    <a href="#" class="essential-card">
+                        <img src="./img/image-placeholder.png" alt="">
+                        <h3 class="p">Bliss Butter</h3>
+                        <data class="text-small" value="$100">$100</data>
+                    </a>
+                </li>
+                <li class="essentials-card-wrapper">
+                    <a href="#" class="essential-card">
+                        <img src="./img/image-placeholder.png" alt="">
+                        <h3 class="p">Bliss Butter</h3>
+                        <data class="text-small" value="$100">$100</data>
+                    </a>
+                </li>
+                <li class="essentials-card-wrapper">
+                    <a href="#" class="essential-card">
+                        <img src="./img/image-placeholder.png" alt="">
+                        <h3 class="p">Bliss Butter</h3>
+                        <data class="text-small" value="$100">$100</data>
+                    </a>
+                </li>
+                <li class="essentials-card-wrapper">
+                    <a href="#" class="essential-card">
+                        <img src="./img/image-placeholder.png" alt="">
+                        <h3 class="p">Bliss Butter</h3>
+                        <data class="text-small" value="$100">$100</data>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -143,7 +149,6 @@
                     <span><img src="./img/love-wooman.svg" alt=""></span>
                     the skin y<span style="color: var(--lightBrown);">o</span>u’re in.
                 </p>
-                <p class="h1">N<span style="color: var(--coral);">o</span>urish & Flourish.</p>
             </div>
         </div>
         <div class="love_image">
@@ -216,7 +221,7 @@
             </div>
             <div class="instagram-subscription text-big">
                 Follow our <a href="#">Instagram</a> & stay connected! <br>
-@denarayessentials
+                @denarayessentials
             </div>
         </div>
     </section>
@@ -260,13 +265,15 @@
 </footer>
 
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" integrity="sha512-pY1t/ADgTwbfGbw0+mRGd33EroA5YgRUWhQNFpPIAdBzyoSb38FsFrf4wBTcS3GFPdTfgtpRrbGCkdl2C2OXYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"
+        integrity="sha512-pY1t/ADgTwbfGbw0+mRGd33EroA5YgRUWhQNFpPIAdBzyoSb38FsFrf4wBTcS3GFPdTfgtpRrbGCkdl2C2OXYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             effect: 'creative',
             centeredSlides: true,
             slidesPerView: "auto",
-            initialSlide : 2,
+            initialSlide: 2,
             grabCursor: true,
             loop: true,
             speed: 400,
@@ -282,7 +289,7 @@
                 },
                 next: {
                     translate: [30, 0, 0],
-                    scale: 0.9,                
+                    scale: 0.9,
                 },
             },
 
@@ -295,7 +302,7 @@
                         },
                         next: {
                             translate: [300, 0, 0],
-                            scale: 0.7,                
+                            scale: 0.7,
                         },
                     },
                 },
@@ -307,7 +314,7 @@
                         },
                         next: {
                             translate: [400, 0, 0],
-                            scale: 0.7,                
+                            scale: 0.7,
                         },
                     },
                 },
@@ -316,4 +323,5 @@
     </script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
