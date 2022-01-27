@@ -84,6 +84,10 @@ header {
   position: relative;
   padding: 20px 0;
   z-index: 5; }
+  header .navigation {
+    transition: .25s color; }
+    header .navigation:hover {
+      color: var(--green); }
 
 header .wrapper {
   display: flex;
@@ -142,7 +146,10 @@ header .wrapper {
   margin-bottom: 48px; }
   .header__nav-item a {
     color: var(--white);
-    font-size: 45px; }
+    font-size: 45px;
+    transition: .25s color; }
+    .header__nav-item a:hover {
+      color: var(--brown); }
 
 .header__nav-contacts {
   margin-bottom: 0;
@@ -315,6 +322,22 @@ input, textarea {
   to {
     transform: translate(-50%, -50%) rotate(360deg); } }
 
+.categories_item img {
+  transition: .3s transform, .3s box-shadow; }
+
+.categories_item h2 {
+  transition: .3s color; }
+
+.categories_item:hover h2 {
+  color: var(--green); }
+
+.categories_item:hover > img {
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25); }
+
+.categories_item:hover .arrow-btn {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25); }
+
 .categories-list_item {
   max-width: 370px; }
 
@@ -329,10 +352,6 @@ input, textarea {
   align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid var(--purple); }
-  .categories-list_item_card-header h2 {
-    transition: .3s color; }
-    .categories-list_item_card-header h2:hover {
-      color: var(--green); }
   .categories-list_item_card-header .arrow-btn {
     margin-left: auto;
     background: var(--purple); }
