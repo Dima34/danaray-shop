@@ -333,7 +333,7 @@ input, textarea{
     top: 0;
 }
 
-.footer_inst, .arrow-btn, .header__close-image, .header__open-image{
+.footer_inst, .arrow-btn, .header__close-image, .header__open-image, .contacts_image a{
     transition: .35s transform, .35s box-shadow;
     border-radius: 50%;
 
@@ -717,7 +717,7 @@ input, textarea{
     }
 }
 
-.contacts__form{
+.contacts__form form{
     flex-shrink: 0;
     text-align: center;
     display: flex;
@@ -746,13 +746,19 @@ input, textarea{
         color: var(--brown);
         padding: 14px 22px;
         width: 100%;
+        font-family: 'Cormorant';
+        font-weight: 500;
 
         &::placeholder{
             color: var(--brown);
         }
+
+        &:focus{
+            outline: 1px solid var(--darkBrown);
+        }
     }
 
-    button{
+    input[type="submit"]{
         min-width: 210px;
         padding: 6px 20px;
         background: var(--coral);
@@ -764,6 +770,17 @@ input, textarea{
         letter-spacing: 0.05em;
         border-radius: 20px;
         margin: 0 auto;
+        border: 1px solid transparent;
+        transition: .3s opacity;
+        display: block;
+
+        &:hover{
+            opacity: .8;
+        }
+
+        &:focus{
+            border-color: var(--darkBrown);
+        }
     }
 }
 
@@ -905,6 +922,12 @@ input, textarea{
         padding-left: 2px;
         padding-bottom: 2px;
     }
+
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+    }
 }
 
 .ingredients-block_container{
@@ -912,7 +935,15 @@ input, textarea{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 90px;
-    margin-bottom: 120px;
+
+}
+
+.ingredients-block{
+
+    &.filled{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 .ingredient-item{
@@ -1127,7 +1158,7 @@ input, textarea{
         }
     }
 
-    .contacts__form{
+    .contacts__form form{
         flex-shrink: 1;
     }
 
