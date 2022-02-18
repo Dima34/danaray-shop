@@ -6,11 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RETURN POLICY</title>
+    <title>Product page</title>
     <link rel="icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet" href="./css/quantity.css">
+    <link rel="stylesheet" href="./css/fancybox.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -18,62 +21,116 @@
 
     <section class="product">
         <div class="wrapper">
-            <div class="product-image-block"></div>
-            <div class="product-info">
-                <h1 class="h2"></h1>
-                <p class="product_subtitle text-small"></p>
-                <p class="product_subscription"></p>
-                <p class="product_price"></p>
-                <div class="product_quantity"><button></button><input type="number" name="" id=""><button></button>
+            <div class="product-image-block">
+                <div class="product-image_main">
+                    <a
+                    href=""
+                    data-fancybox="gallery"
+                    >
+                        <img src="" alt="product image">
+                    </a>
                 </div>
-                <button class="product_add-button"></button>
-                <div class="product_accordion">
-                    <button class="accordion-header"></button>
-                    <div class="accordion-contnent">
-                        <p></p>
+                <div class="swiper product-image_sub-blocks">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div data-imgUrl = "./img/product-image.png" class="gallery-button">
+                            <img src="./img/product-image.png" alt="product image">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div data-imgUrl = "./img/product-image.png" class="gallery-button">
+                            <img src="./img/product-image.png" alt="product image">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div data-imgUrl = "./img/product-image.png" class="gallery-button">
+                            <img src="./img/product-image.png" alt="product image">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div data-imgUrl = "./img/product-image.png" class="gallery-button">
+                            <img src="./img/product-image.png" alt="product image">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 class="h2">Bliss </h1>
+                <p class="product_subtitle text-small open">Soothing + Moisturizing Butter</p>
+                <p class="product_subscription text-small open">Deeply rejuvenating, our <em>“Soothing & Moisturizing Butter”</em> infuses skin with quality nutrients. 
+                    <em>Calendula Infused Oil</em> targets inflammation, while Hemp Seed Oil soothes irritation. Redness is calmed via Colloidal Oatmeal, 
+                    and dry skin is nourished by <em>Avocado Butter</em>. </p>
+                <p class="product_price open">$148.00</p>
+                <div class="product_quantity-container">
+                    <p class="text-small open">Quantity</p>
+                    <div class="quantity">
+                        <button class="quant-down"></button>
+                        <input type="number" min="1" value="1" name="" id="">
+                        <button class="quant-up"></button>
                     </div>
                 </div>
+                <button class="product_add-button text-big">Add to cart</button>
                 <div class="Accordion">
                     <h3>
                         <button class="Accordion-trigger"  >
-                            <span class="Accordion-title">
-                                Billing Address
-                                <span class="Accordion-icon"></span>
+                            <span class="Accordion-title text-small">
+                                HOW TO USE
+                                <span class="Accordion-icon" style="background-image: url(../img/accordion-button.svg);"></span>
                             </span>
                         </button>
                     </h3>
                     <div class="Accordion-panel" >
                         <div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ipsum vitae odit enim natus consectetur velit corporis, perspiciatis debitis delectus.</p>
+                            <p class="text-small">
+                                <em>DIRECTIONS:</em> Massage gently into clean, dry skin twice a day. 
+                            </p>
                         </div>
                     </div>
                     <h3>
                         <button class="Accordion-trigger">
-                            <span class="Accordion-title">
-                                Billing Address
-                                <span class="Accordion-icon"></span>
+                            <span class="Accordion-title text-small">
+                                Key Ingredients
+                                <span class="Accordion-icon" style="background-image: url(../img/accordion-button.svg);"></span>
                             </span>
                         </button>
                     </h3>
                     <div class="Accordion-panel">
                         <div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ipsum vitae odit enim natus consectetur velit corporis, perspiciatis debitis delectus.</p>
+                            <p class="text-small">
+                                <strong>Cupuacu Butter</strong> - Has hydrophilic properties that carry water deep into skin, to hydrate and soften. <br><br>
+                                <strong>Apricot Kernel Oil</strong> - Improves skin tone, while maintaining radiance and smoothing texture. <br><br>
+                                <strong>Illipe Butter</strong> - Reinforces the natural protective barrier of skin, to repair and prevent damage.
+                            </p>
                         </div>
                     </div>
                    
                     <h3>
                         <button class="Accordion-trigger">
-                            <span class="Accordion-title">
-                                Shipping Address
-                                <span class="Accordion-icon"></span>
+                            <span class="Accordion-title text-small">
+                                all ingredients
+                                <span class="Accordion-icon" style="background-image: url(../img/accordion-button.svg);"></span>
                             </span>
                         </button>
                     </h3>
                     <div class="Accordion-panel">
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam esse sit sequi provident, porro facere ad! Quaerat exercitationem reiciendis enim ratione obcaecati maxime molestias, praesentium, saepe laudantium excepturi hic reprehenderit nesciunt cumque ipsam! Culpa a ipsum esse beatae maiores, eos vero quaerat aliquid molestiae repellat atque nesciunt provident amet odit, praesentium possimus voluptas, tempore eaque delectus! Dolorem modi suscipit possimus placeat quia culpa nisi ratione adipisci illo. Necessitatibus libero quae tempora tenetur rerum dolorem asperiores.</p>
+                            <p class="text-small">
+                                Butyrospermum Parkii <strong>(Shea)</strong> Butter, Persea Gratissima <strong>(Avocado)</strong> Oil, Hydrogenated Vegetable Oil, 
+                                Garcinia Indica <strong>(Kokum)</strong> Seed Butter, Theobroma Grandiflorum <strong>(Cupuacu)</strong> Seed Butter, Limnanthes Alba 
+                                <strong>(Meadowfoam)</strong> Seed Oil, Prunus Armeniaca <strong>(Apricot)</strong> Kernel Oil, Helianthus Annuus <strong>(Sunflower)</strong> 
+                                Seed Oil, Calendula Officinalis Flower Extract, Cocos Nucifera <strong>(Coconut)</strong> Oil, Cannabis Sativa <strong>(Hemp)</strong> Seed Oil, 
+                                Avena Sativa <strong>(Oat Kernel)</strong> Flour, Maranta Arundinacea <strong>(Arrowroot)</strong> Root Powder, Tocopherol <strong>(Vitamin E)</strong>, 
+                                Retinyl Palmitate <strong>(Retinol)</strong>. <br> <br>
+
+                                <em><strong>All Natural, Vegan, Cruelty Free</strong></em>
+                            </p>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -83,6 +140,30 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/accordion.js"></script>
+    <script src="./js/quantity.js"></script>
+    <script src="./js/fancybox.js"></script>
+    <script src="./js/item-gallery.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView:3,  
+            spaceBetween: 7,
+            allowTouchMove: false,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+
+
 </body>
+
 
 </html>

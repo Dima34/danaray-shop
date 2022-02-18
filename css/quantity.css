@@ -1,0 +1,51 @@
+.quantity{
+    display: flex;
+    gap: 10px;
+    align-items: center;    
+    max-width: 90px;
+}
+
+.quantity input{
+    width: fit-content;
+    display: block;
+    width: 36px;
+    text-align: center;
+    border: 0;
+}
+
+.quantity button{
+    width: 26px;
+    height: 26px;
+    background: var(--green);
+    color: var(--milk);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.quantity button:active{
+    background: var(--darkGreen);
+}
+
+.quantity button.quant-up::before{
+    width: 2px;
+    height: 12px;
+}
+
+.quantity button::after{
+    width: 12px;
+    height: 2px;
+}
+
+.quantity button::after, .quantity button::before{
+    content: "";
+    position: absolute;
+    background: var(--milk);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

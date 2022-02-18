@@ -2,7 +2,7 @@ const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
 const containerWrapper = document.querySelector(".inredients-container .wrapper") 
 const itemList = document.querySelectorAll(".ingredient-item")
 
-// Creating
+// Creating that strucrure for each symbol
 // <div class="ingredients-block" id="a">
 //     <h2 class="heading text-big">А</h2>
 //     <div class="ingredients-block_container"> 

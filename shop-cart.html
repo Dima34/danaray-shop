@@ -6,10 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <title>Cart</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/quantity.css">
+    <link rel="icon" href="./img/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -58,57 +59,99 @@
     </nav>
 </header>
 
-    <section class="products">
+
+    <div class="cart">
         <div class="wrapper">
-            <h1 class="h2 text-center bold">All products</h1>
+            <h1 class="h2">My shopping cart</h1>
 
-            <div class="products-section">
-                <h2 class="text-big">Body Care Products</h2>
-                <div class="products-section_container">
-                    <a href="#" class="products-section_product">
-                        <img src="./img/image-placeholder.png" alt="">
-                        <div class="product_header">
-                            <h3 class="p">Bliss Butter</h3>
-                            <data class="p" value="100$">$180</data>
-                        </div>
-                        <p>Moisturizing & Soothing Whipped Body Butter</p>
-                    </a>
+            <div class="cart__descktop">
 
-                    <a href="#" class="products-section_product">
-                        <img src="./img/image-placeholder.png" alt="">
-                        <div class="product_header">
-                            <h3 class="p">Homebody Butter</h3>
-                            <data class="p" value="100$">$180</data>
-                        </div>
-                        <p>Anti-Aging Whipped Body Butter</p>
-                    </a>
+                <div class="cart__header">
+
+                    <p class="open text-small">Product</p>
+                    <p class="open text-small">Price</p>
+                    <p class="open text-small">Quantity</p>
+                    <p class="open text-small">Total</p>
+    
+                    <div class="cart__item_line"></div>
                 </div>
+    
+                <div class="cart__item"> 
+    
+                    <div class="cart__item_product-info">
+                        <img src="./img/product-image.png" alt="item image" width="130" height="130">
+                        <p class="text-big">Bliss Butter</p>
+                    </div>
+    
+                    <p class="cart__item_price open">$180.00</p>
+                    <div class="quantity">
+                        <div class="quant-down"></div>
+                        <input type="number" min="1" value="1" name="" id="">
+                        <div class="quant-up"></div>
+                    </div>
+                    <p class="cart__item_total open">$180.00</p>
+    
+                    <div class="cart__item_line"></div>
+
+                    <button class="cart__item_delete">
+                        <svg width="20" height="20" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0.646447" y1="38.6464" x2="38.6464" y2="0.646447" stroke="black"     stroke-width="2"/>
+                            <line x1="1.35355" y1="0.646447" x2="39.3536" y2="38.6464" stroke="black"     stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+    
             </div>
 
-            <div class="products-section">
-                <h2 class="text-big">Facial Care Products</h2>
-                <div class="products-section_container">
-                    <a href="#" class="products-section_product">
-                        <img src="./img/image-placeholder.png" alt="">
-                        <div class="product_header">
-                            <h3 class="p">Gleam</h3>
-                            <data class="p" value="100$">$180</data>
-                        </div>
-                        <p>Vitamin C Facial Cleanser</p>
-                    </a>
-
-                    <a href="#" class="products-section_product">
-                        <img src="./img/image-placeholder.png" alt="">
-                        <div class="product_header">
-                            <h3 class="p">Glow</h3>
-                            <data class="p" value="100$">$180</data>
-                        </div>
-                        <p>Vitamin C Face Oil</p>
-                    </a>
+            <div class="cart__mobile">
+                <div class="cart__header">
+                    <p class="open text-small">Product</p>
+                    <p class="open text-small">Price</p>
                 </div>
+
+                <div class="cart__item">
+                    <div class="cart__item_top">
+                        <p class="name open text-small">Evil Eye</p>
+                        <p class="price open text-small">€32,00</p>
+                        <button class="cart__item_delete">
+                            <svg width="20" height="20" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.646447" y1="38.6464" x2="38.6464" y2="0.646447" stroke="black"     stroke-width="2"/>
+                                <line x1="1.35355" y1="0.646447" x2="39.3536" y2="38.6464" stroke="black"     stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="cart__item_bottom">
+                        <img src="./img/item1.png" alt="item">
+                        <div class="amount">
+                            <p class="open text-small">Amount</p>
+                            <input type="number" value="1" name="value" id="">
+                        </div>
+                    </div>
+                </div>
+                
             </div>
+            
+
+            <div class="cart__total-info">
+                <div class="cart__total-header">
+                    <p class="text-big">Total</p>
+                    <p class="open">$<span>180.00</span></p>
+                </div>
+                
+                <p class="cart__total-text open text-small">
+                    Products will be processed & shipped after the pre order closing date. <br>
+                    Shipping & taxes calculated at checkout.
+                </p>
+
+                <a href="#" class="text-big cart_total-checkout">
+                    Checkout
+                </a>
+                
+            </div>
+
         </div>
-    </section>
+    </div>
+
 
     <footer>
     <div class="wrapper">
@@ -157,8 +200,11 @@
         </p>
     </div>
 </footer>
-
+   
+    
     <script src="./js/script.js"></script>
+    <script src="./js/quantity.js"></script>
+    
 </body>
 
 </html>
